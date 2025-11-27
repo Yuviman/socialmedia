@@ -1,51 +1,152 @@
-body {
-    font-family: Arial;
-    background: #f4f4f4;
-    padding: 20px;
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: #f2f5f9;
+    padding: 30px;
+    color: #333;
+}
+
+/* Centered container for forms */
 .container {
-    background: white;
-    padding: 20px;
     width: 400px;
     margin: auto;
-    border-radius: 10px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+    margin-top: 70px;
 }
 
+h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+/* Input fields */
 input, textarea {
     width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-}
-
-button {
-    padding: 10px;
-    width: 100%;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-}
-
-.post {
-    background: white;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #d0d0d0;
     border-radius: 8px;
+    font-size: 14px;
+    background: #fafafa;
+    transition: 0.2s;
+}
+
+input:focus, textarea:focus {
+    border-color: #4a90e2;
+    background: #fff;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 500;
+}
+
+button:hover {
+    background: #3576c4;
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 15px 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #4a90e2;
+}
+
+.navbar a:hover {
+    color: #3576c4;
+}
+
+/* Feed page posts */
+.post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.08);
+}
+
+.post h4 {
+    color: #4a90e2;
+    margin-bottom: 8px;
 }
 
 .post-img {
     width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
     margin-top: 10px;
 }
 
-.navbar {
-    background: #333;
-    padding: 10px;
-    color: white;
+/* Comments */
+    background: #fff;
+    padding: 15px;
+    border-left: 4px solid #4a90e2;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.04);
 }
 
-.navbar a {
-    color: white;
-    margin-left: 20px;
+
+/* Error message */
+.error {
+    background: #ffeded;
+    padding: 10px;
+    border: 1px solid #ffb5b5;
+    color: #c90000;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+/* Links */
+a {
+    color: #4a90e2;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: #3576c4;
+}
+
+/* Back to feed link */
+.back-link {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #4a90e2;
+    font-weight: 500;
+}
+
